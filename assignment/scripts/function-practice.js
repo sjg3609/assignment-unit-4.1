@@ -64,8 +64,11 @@ console.log(isPositive(140));
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 
+let randomArray = [];
+
 function getLast( array ) {
-    array.lastIndexOf(getLast);
+    randomArray.lastIndexOf(array);
+    console.log(randomArray);
 
 }
 
