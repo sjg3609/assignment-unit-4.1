@@ -50,6 +50,8 @@ function isPositive( number ) {
   }
 }
 
+console.log(isPositive(12));
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
@@ -67,12 +69,11 @@ console.log(isPositive(140));
 let randomArray = [];
 
 function getLast( array ) {
-    randomArray.lastIndexOf(array);
-    console.log(randomArray);
+    randomArray = randomArray.lastIndexOf(array);
 
 }
 
-console.log(getLast(1, 3, 5, 9));
+console.log(getLast([1, 3, 5, 7]));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
