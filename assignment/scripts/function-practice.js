@@ -81,9 +81,9 @@ function getLast( array ) {
   }
   
 }
-console.log(randomArray[randomArray.length - 1]);
+console.log('How long is the array:', randomArray[randomArray.length - 1]);
 
-console.log(getLast([1, 5, 3, 2, 9]));
+console.log('Find last item in the array:', getLast([1, 5, 3, 2, 9]));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
