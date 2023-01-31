@@ -66,14 +66,24 @@ console.log(isPositive(140));
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 
-let randomArray = [1, 3, 5, 7];
+let randomArray = [1, 2, 3, 4];
 
 // function getLast( array ) {
-//     randomArray.findLastIndex(`${array}`);
+//     randomArray.findLast(array);
 
 // }
 
-// console.log(getLast());
+function getLast( array ) {
+  if (array.length > 0) {
+    return array[array.length - 1];
+  } else {
+    return undefined;
+  }
+  
+}
+console.log(randomArray[randomArray.length - 1]);
+
+console.log(getLast([1, 5, 3, 2, 9]));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
@@ -82,16 +92,15 @@ let randomArray = [1, 3, 5, 7];
 
 function find( value, array ){
   for (let i=0; i < array.length; i++) {
-      if (value[i]) {
+      if (value === array[i]) { // 7 === array[0] 7 === 2
         return true;
-      } else {
-        return false;
-      }
-  }
+      } 
+  } 
+  return false;
 }
 
-console.log(find(7, [2, 4, 6]));
-console.log(find(6, [2, 4, 6]));
+console.log('expect find(7, [2, 4, 6]) false:', find(7, [2, 4, 6]));
+console.log('expect find(6, [2, 4, 6]) true:', find(6, [2, 4, 6]));
 
 // ----------------------
 // Stretch Goals
